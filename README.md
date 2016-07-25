@@ -6,6 +6,7 @@ Stakeholder
 Motivation
 Action
 
+```
 As a time-pressed user
 So that I can quickly go to web sites I regularly visit
 I would like to see a list of links on the homepage
@@ -25,3 +26,4 @@ I would like to add tags to the links in my bookmark manager
 As a time-pressed user
 So that I can quickly find links on a particular topic
 I would like to filter links by tag
+```

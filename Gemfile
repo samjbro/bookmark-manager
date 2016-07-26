@@ -5,7 +5,9 @@ source "https://rubygems.org"
 gem "data_mapper"
 gem 'dm-postgres-adapter'
 
-gem 'sinatra'
-gem 'rspec'
-gem 'capybara'
-gem 'rspec-sinatra'
+group :test, :development do
+  gem 'sinatra'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rspec-sinatra'
+end

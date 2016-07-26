@@ -1,6 +1,5 @@
 require 'rubygems'
-require 'data_mapper' # requires all the gems listed above
-
+require 'data_mapper'
 
 class Link
   include DataMapper::Resource

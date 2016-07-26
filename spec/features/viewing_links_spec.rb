@@ -1,7 +1,6 @@
+# require 'spec_helper'
+
 feature 'Viewing links' do
-  # As a time-pressed user
-  # So that I can quickly go to web sites I regularly visit
-  # I would like to see a list of links on the homepage
   scenario 'I can see a list of links on the page' do
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
     visit '/links'
@@ -12,7 +11,4 @@ feature 'Viewing links' do
     end
 
   end
-
-
-
 end

@@ -11,4 +11,5 @@ gem 'capybara'
 gem 'sinatra'
 gem 'rspec-sinatra'
 gem 'selenium-webdriver'
+gem 'database_cleaner'
 

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require './app/models/link.rb'
 
 feature "Viewing links" do
   scenario 'on loading the application links are shown' do

@@ -2,9 +2,6 @@ require 'sinatra/base'
 require_relative 'models/link'
 
 class BookmarkManager < Sinatra::Base
-  # get '/' do
-  #   erb :index
-  # end
 
   get '/links' do
     @links = Link.all

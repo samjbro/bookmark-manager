@@ -1,5 +1,8 @@
 require 'rubygems'
 require 'data_mapper'
+require 'database_cleaner'
+require_relative 'db_setups'
+
 
 class Link
   include DataMapper::Resource
@@ -8,6 +11,4 @@ class Link
   property :url,        Text
 end
 
-DataMapper.setup(:default, 'postgres://localhost/bookmark_manager_test')
-DataMapper.finalize
-DataMapper.auto_upgrade!
+db_setup

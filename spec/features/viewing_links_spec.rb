@@ -6,8 +6,7 @@ feature "Viewing links" do
     Link.create(url: 'http://www.google.co.uk', title: 'Google')
 
     visit '/links'
-    within 'ul#links' do
-      expect(page).to have_content 'http://www.google.co.uk'
-    end
+    expect(page).to have_content 'http://www.google.co.uk'
+
   end
 end

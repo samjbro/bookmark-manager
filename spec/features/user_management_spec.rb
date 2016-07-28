@@ -1,6 +1,6 @@
 feature 'User management' do
   scenario 'a new user is able to sign up' do
-    sign_up
+
     expect{ sign_up }.to change(User, :count).by 1
     expect(page).to have_content "Welcome, sam@email.com!"
     user = User.first
@@ -9,5 +9,7 @@ feature 'User management' do
 
   scenario 'does not create a new user if password does not match confirmation' do
     expect { sign_up(password_confirmation: 'wrong') }.not_to change(User, :count)
+    expect(current_path).to eq '/users'
+    expect(page).to have_content 'Password and confirmation password do not match'
   end
 end

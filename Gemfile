@@ -10,6 +10,7 @@ ruby '2.3.1'
   gem 'rspec-sinatra'
   gem 'database_cleaner'
   gem 'rake'
+  gem 'bcrypt'
 
 group :test do
   gem 'rspec'

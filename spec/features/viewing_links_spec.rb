@@ -1,3 +1,6 @@
+require 'data_mapper'
+require 'dm-postgres-adapter'
+
 feature 'Viewing links' do
   scenario 'I can see existing links on the links page' do
     Link.create(url: 'www.makersacademy.com', title: 'Makers Academy')
